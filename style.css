@@ -1,0 +1,49 @@
+header {
+    height: 20vh;
+    width: 50%;
+    display: table;
+    margin: auto;
+}
+
+h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.game-set {
+    width: 450px;
+    display: table;
+    margin: auto;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+#one {
+    width: 75px;
+    height: 25px;
+    border-radius: 12.5px;
+    background-color: #0ABAB5;
+}
+
+#two {
+    width: 100px;
+    height: 25px;
+    border-radius: 12.5px;
+    background-color: #FF5733;
+}
+
+#three {
+    width: 125px;
+    height: 25px;
+    border-radius: 12.5px;
+    background-color: #77C630;
+}
+
+#refresh {
+    margin: 20px;
+    text-align: center;
+}
