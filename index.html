@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -20,14 +20,20 @@
               class="d-inline-block align-top m-2 d-inline"
               alt="Tower of Hanoi"
         />
-        <div class="towers" id="tower-one">
-            <div class="disc" id="one"></div>
-            <div class="disc" id="two"></div>
-            <div class="disc" id="three"></div>
+        <div class="towers" data-tower-number="1" id="tower-one">
+            <div class="discs" data-disc-number="1" id="one"></div>
+            <div class="discs" data-disc-number="2" id="two"></div>
+            <div class="discs" data-disc-number="3" id="three"></div>
         </div>
-        <div class="towers" id="tower-two">
+        <div class="towers" data-tower-number="2" id="tower-two">
         </div>
-        <div class="towers" id="tower-three">
+        <div class="towers" data-tower-number="3" id="tower-three">
+        </div>
+    </div>
+    <div id="movesAvailable" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
         </div>
     </div>
     <div id="refresh">
