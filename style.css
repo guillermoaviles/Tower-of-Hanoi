@@ -12,7 +12,7 @@ h1 {
     font-size: 5vh;
 }
 
-.game-set {
+#game-set {
     width: 450px;
     display: table;
     margin: auto;
