@@ -57,15 +57,15 @@ h1 {
 }
 
 #game-elements {
-    width: 495px;
+    width: 515px;
     margin: 10px auto;
     height: 75px;
-    left: 100px;
-    top: 115px;
+    left: 89px;
+    top: 133px;
     position: absolute;
     z-index: 1;
     display: grid;
-    grid-gap: 60px;
+    grid-gap: 72px;
     grid-template-columns: 125px 125px 125px;
 }
 
