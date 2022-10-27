@@ -16,5 +16,5 @@ As a user, I want to be able to reset the game by clicking a button on the page.
 ## Wireframe
 [Wireframe](https://github.com/guillermoaviles/Tower-of-Hanoi/blob/main/Images/Tower%20of%20Hanoi%20Wireframe.png)
 
-## Unsolved problems or Major Hurdles
+## Unsolved Problems or Major Hurdles
 > Currently there are no unsolved problems. Major hurdles that had to be overcome were how to design the core functionality architecture. Before writing any line of code, a lot of thought was given to what would be the correct approach in developing the game logic so that there would be a clear path to developing the functionality. 
