@@ -7,24 +7,22 @@ const tower1 = document.querySelector('#tower-one');
 const tower2 = document.querySelector('#tower-two');
 const tower3 = document.querySelector('#tower-three');
 const modal = document.getElementById("movesAvailable");
-const span = document.getElementsByClassName("close")[0];
 const modalContent = document.querySelector('#buttons');
+const gameWonModal = document.getElementById('game-won');
+const span = document.getElementsByClassName("close")[0];
 const gameSet =  document.querySelector('#game-set');
 gameSet.addEventListener('click', moveOptions);
 
-
+// Upon clicking on the topmost disc, presents the user with alternatives to move the dics to.
 function moveOptions(event) {
-    // console.log(tower1.firstElementChild.getAttribute('data-disc-number'));
     modalContent.innerHTML = '';
     const clickedDisc = event.target;
-    console.log(clickedDisc);
     const thisDisc = parseInt(event.target.getAttribute('data-disc-number'))
     let availableOptions = [];
     const parentTower = event.target.parentNode;
-    console.log(parentTower.firstElementChild.getAttribute('data-disc-number'));
     if (thisDisc !== parseInt(parentTower.firstElementChild.getAttribute('data-disc-number'))) {
         return
-    }
+    };
     for (let i = 0; i < towers.length; i++) {
         if (towers[i].childElementCount !== 0) {
             const topDisc = towers[i].firstElementChild;
@@ -46,8 +44,7 @@ function moveOptions(event) {
             tower1.prepend(clickedDisc);
             modal.style.display = "none";
             })
-            modalContent.appendChild(option);
-            
+            modalContent.appendChild(option);    
         } else if (availableOptions[i] === 2) {
             const option = document.createElement('button');
             option.innerHTML = `Tower 2`
@@ -62,10 +59,17 @@ function moveOptions(event) {
             option.addEventListener('click', () => {
             tower3.prepend(clickedDisc);
             modal.style.display = "none";
+            console.log(tower3.childElementCount);
+            if (tower3.childElementCount === 3) {
+                gameWonModal.style.display = "block";
+                span.addEventListener('click', () => {
+                gameWonModal.style.display = "none";
+                });
+            };
             })
             modalContent.appendChild(option);
         }
-    }
+    };
     // Call modal with available moves.
     modal.style.display = "block";
     span.addEventListener('click', () => {
