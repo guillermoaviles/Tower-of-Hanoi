@@ -13,49 +13,75 @@ h1 {
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
+  display: none; 
+  position: fixed; 
+  z-index: 2; 
   left: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
   overflow: auto; 
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/*.game-won-modal {
-    display: none; 
-    position: fixed; 
-    z-index: 2; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-}*/
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 
 .towers {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10.5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    text-align: center;
+    font-family: 'Arial';
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.button {
+	padding: 14px 18px;
+    margin: 8px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+}
+
+
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+#close-game-won-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    
+#close-game-won-modal:hover,
+#close-game-won-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #game-set {
@@ -82,20 +108,12 @@ h1 {
     grid-template-columns: 125px 125px 125px;
 }
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 20%; /* Could be more or less, depending on screen size */
-}
-
 #game-won-modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 20%; /* Could be more or less, depending on screen size */
+    width: 20%; 
   }
 
 #one {
