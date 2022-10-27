@@ -8,6 +8,9 @@ Tower of Hanoi
 ## Technologies Used
 > HTML, CSS, JavaScript
 
+## Installation instructions
+> None. User simply needs to navigate to the page in order to play thee game.
+
 ## User Stories
 > As a user I want to be able to see a 2D representation of a Tower of Hanoi game set.
 As user, I want to be able to move the top disc on any tower on to the top of a larger disc or empty tower.
