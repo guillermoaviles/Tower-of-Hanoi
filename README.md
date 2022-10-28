@@ -8,7 +8,7 @@ Tower of Hanoi
 ## Technologies Used
 > HTML, CSS, JavaScript
 
-## Installation instructions
+## Installation Instructions
 > None. User simply needs to navigate to the page in order to play thee game.
 
 ## User Stories
