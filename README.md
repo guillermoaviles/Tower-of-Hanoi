@@ -12,11 +12,11 @@ Tower of Hanoi
 > None. User simply needs to navigate to the page in order to play thee game.
 
 ## User Stories
-> As a user I want to be able to see a 2D representation of a Tower of Hanoi game set.
-As user, I want to be able to move the top disc on any tower on to the top of a larger disc or empty tower.
-As a user, I want be able to click on the disk and be shown a prompt asking where I want to move the disc.
-As a user, I want to know that I have won by having a pop up appear once all discs are on tower 3.
-As a user, I want to be able to reset the game by clicking a button on the page.
+- As a user I want to be able to see a 2D representation of a Tower of Hanoi game set.
+- As user, I want to be able to move the top disc on any tower on to the top of a larger disc or empty tower.
+- As a user, I want be able to click on the disk and be shown a prompt asking where I want to move the disc.
+- As a user, I want to know that I have won by having a pop up appear once all discs are on tower 3.
+- As a user, I want to be able to reset the game by clicking a button on the page.
 
 ### Wireframe
 >![Wireframe](https://github.com/guillermoaviles/Tower-of-Hanoi/blob/main/Images/Tower%20of%20Hanoi%20Wireframe.png)
